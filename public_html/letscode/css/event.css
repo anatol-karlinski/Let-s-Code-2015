@@ -1,0 +1,35 @@
+body
+{    
+    margin: 0;
+    padding: 0;
+}
+
+#topBar
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 7%;
+	background-color: pink;	
+}
+
+#mapa
+{
+	position: fixed;
+	left: 0;
+	top: 7%;
+	width: 50%;
+	height: 93%;
+	background-color: blue;
+}
+
+#wyniki
+{
+	position: fixed;
+	top: 7%;
+	right: 0;
+	width: 50%;
+	height: 93%;
+	float: right;
+	background-color: green;	
+}

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.css">
+      <link rel="stylesheet" type="text/css" href="css/global.css">
+      <link rel="stylesheet" type="text/css" href="css/create.css">
+    </head>
+  </head>
+  <body>
+  <div id="topBar">STWÓRZ NOWE WYDARZENIE</div>
+
+  <div id="prawyPanel">
+
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map" Align=""></div>
+
+   <div id="floating-panel" style="display:none">
+      <input id="latlng" type="text" value="40.714224,-73.961452"></input>
+      <input id="submit" type="button" value="Reverse Geocode"></input>
+    </div>
+     <script src="js/jquery.js"></script>
+
+    <script src="js/create.js"></script> 
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeWjWCBLH5U8IVTsT3snUmnPJkw1V3R5A&libraries=places&callback=initAutocomplete"
+         async defer></script>
+  <!--
+<div id="form" >
+
+<form id="createEvent">
+
+<input type="text" id="Nazwa">Nazwa tekst</input></br>
+<input type="text" id="Czas">Czas tekst</input></br>
+<input type="text" id="Miejsce">Miejsce tekst</input></br>
+<input type="text" id="Lokalizacja">Lokalizacja tekst</input></br>
+<input type="text" id="Kontakt">Kontakt tekst</input></br>
+<input type="text" id="Min">Min tekst</input></br>
+<input type="text" id="Max">Max tekst</input></br>
+<input type="text" id="Kategoria">Kategoria tekst</input></br>
+<input type="text" id="Organizator">Organizator tekst</input></br>
+
+  
+  </div>
+  <div id="sercz">
+  
+  <input type="text" id="sOrganizator">Nazwa tekst</input></br>
+  
+  
+  </div>
+  
+</form>
+-->
+  
+  </div>
+  <div id="lewyPanel">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/create.js"></script>
+
+<form action="create.php" method="post" id="forma"> 
+
+
+  <br><div class='tytol'>Tytuł spotkania: </div>
+  <input type="text" class="nazwa" name="nazwa" size="40" value=""> 
+
+  <br><div class="tytol" id="kategoria">Kategoria spotkania: </div>
+    <select id="kategorie" name="kategoria">
+      <option value="kat_1" name="kategoria">Koszykowka</option>
+      <option value="kat_2" name="kategoria">Piłka nożna</option>
+      <option value="kat_3" name="kategoria">Siatkówka</option>
+    </select>
+
+  <br><div class="tytol">Organizator spotkania: </div>
+    <input type="text"  class="nazwa" name="organizator" id="organizator"></input> 
+    <br>
+
+  <br><div class="tytol">Dzień spotkania: </div>
+  <input type="text" class="nazwa"  name="data" id="datepicker">
+
+  <br><div class="tytol">Godzina spotkania: </div>
+  <center><input id="godziny" class="spin" name="godziny">  :  <input id="minuty" class="spin" name="minuty"> </center>
+    <br>
+
+  <br><div class="tytol">Maksymalna i minimalna ilość uczestników :</div>
+    <center><input id="min" name="min" class="spin">  :  <input id="max" name="max" class='spin'> </center>
+
+  <input type="text" name="pozx" id="pozx" style="display:none"></input>
+
+  <input type="text" name="pozy" id="pozy" style="display:none"></input>
+
+  <input type="text" name="miejsce" id="miejsce" style="display:none"></input>
+
+  <br>
+  <center><input class="button" type="submit" value="create"></center>
+
+
+
+  </div>
+
+  </body>
+</html>

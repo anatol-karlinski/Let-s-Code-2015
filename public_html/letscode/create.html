@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/create.css">
+</head>
+<body>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui/jquery-ui.min.js"></script>
+	<script src="js/global.js"></script>
+	<script src="js/create.js"></script>
+<div id="topBar"><div>
+<form action="create.php" method="post"> 
+
+  	<br>Nazwa<br>
+	<input type="text" name="nazwa"size="40" value=""> 
+
+	<br>Kategoria:<br>
+  	<select id="kategorie" name="kategoria">
+	    <option value="kat_1" name="kategoria">kat 1</option>
+	    <option value="kat_2" name="kategoria">kat 2</option>
+	    <option value="kat_3" name="kategoria">kat 3</option>
+  	</select>
+
+ 	<br>Podkategoria:<br>
+  	<select id="sub_kat1" style="display:block" name="kategoria">
+	    <option value="kat_1">sub kat 1</option>
+	    <option value="kat_2">sub kat 1</option>
+	    <option value="kat_3">sub kat 1</option>
+  	</select>
+
+  	<select id="sub_kat2" style="display:none" name="kategoria">
+	    <option value="kat_1">sub kat 2</option>
+	    <option value="kat_2">sub kat 2</option>
+	    <option value="kat_3">sub kat 2</option>
+  	</select>
+
+  	<select id="sub_kat3" style="display:none" name="kategoria">
+	    <option value="kat_1">sub kat 3</option>
+	    <option value="kat_2">sub kat 3</option>
+	    <option value="kat_3">sub kat 3</option>
+  	</select>
+
+ 	<br>Data:<br>
+ 	<input type="text" name="data" id="datepicker">
+
+	<br>Godzina:
+	<br>
+  	<input id="godziny" name="godziny"> : <input id="minuty" name="minuty"> 
+  	<br>
+
+ 	<br>min/max:
+	<br>
+  	<input id="min" name="min"> / <input id="max" name="max"> 
+  	<br>
+
+	<br>Organizator:
+	<br>
+  	<input type="text" name="organizator"></input> 
+  	<br>
+
+	<br>Opis:
+	<br>
+  	<input type="text" name="opis"></input> 
+  	<br>
+
+ 	<br><br>
+	<input type="submit" value="create">
+
+
+
+
+</body>
+</html>
